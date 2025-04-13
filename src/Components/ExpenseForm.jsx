@@ -11,9 +11,11 @@ function ExpenseForm({ onAddExpense }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const currentDateTime = new Date().toISOString();
     onAddExpense({
       ...formData,
       amount: parseFloat(formData.amount),
+      dateAdded: currentDateTime,
     });
     setFormData({ name: '', amount: '', description: '', category: '' });
   };
@@ -24,6 +26,7 @@ function ExpenseForm({ onAddExpense }) {
 
   return (
     <form onSubmit={handleSubmit} className="expense-form">
+      <h2>Add New Expense</h2>  
       <input
         type="text"
         name="name"
@@ -55,7 +58,7 @@ function ExpenseForm({ onAddExpense }) {
         onChange={handleChange}
         placeholder="Category"
       />
-      <button type="submit">Add Expense</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }
