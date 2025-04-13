@@ -1,0 +1,72 @@
+
+
+.App-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.expense-form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.expense-form input,
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.expense-form button {
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expense-form button:hover {
+  background-color: #0056b3;
+}
+
+.search-bar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.expense-table th {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.expense-table th:hover {
+  background-color: #e0e0e0;
+}
+
+.expense-table button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expense-table button:hover {
+  background-color: #c82333;
+}
